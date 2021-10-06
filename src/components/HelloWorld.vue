@@ -33,9 +33,9 @@
     </form>
 
     <div class="bg-gray-200 pt-16 py-10">
-      <div>
-        <div class="">Advanced Statistics</div>
-        <div>
+      <div class="px-6 leading-10">
+        <div class="text-2xl font-extrabold mb-4">Advanced Statistics</div>
+        <div class="text-gray-400 text-sm">
           Track how your links are performing across the web with our 
           advanced statistics dashboard.
         </div>

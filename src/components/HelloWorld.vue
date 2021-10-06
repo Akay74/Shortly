@@ -70,35 +70,40 @@
       </div>
     </div>
 
-    <div>
-      <div>Boost your links today</div>
+    <div class="px-6 py-20 bg-blue-800">
+      <div class="text-white font-bold text-2xl mb-3">Boost your links today</div>
 
-      <button>Get Started</button>
+      <button class="rounded-full bg-gray-400 text-white font-bold px-7 py-3 cursor-pointer">Get Started</button>
     </div>
 
-    <div>
-      <div></div>
-      <div>
-        <p>Features</p>
-        <p>Link Shortening</p>
-        <p>Branded Links</p>
-        <p>Analytics</p>
+    <div class="bg-blue-900 px-8 py-10">
+      <div class="mb-7 text-center"><img src="../assets/logo-white.svg" alt="Shortly logo"></div>
+      <div class="mb-7">
+        <p class="text-white font-bold mb-4">Features</p>
+        <p class="text-gray-400 mb-2">Link Shortening</p>
+        <p class="text-gray-400 mb-2">Branded Links</p>
+        <p class="text-gray-400 mb-2">Analytics</p>
       </div>
-      <div>
-        <p>Resources</p>
-        <p>Blog</p>
-        <p>Developers</p>
-        <p>Support</p>
+      <div class="mb-7">
+        <p class="text-white font-bold mb-4">Resources</p>
+        <p class="text-gray-400 mb-2">Blog</p>
+        <p class="text-gray-400 mb-2">Developers</p>
+        <p class="text-gray-400 mb-2">Support</p>
       </div>
-      <div>
-        <p>Company</p>
-        <p>About</p>
-        <p>Our Team</p>
-        <p>Careers</p>
-        <p>Contact</p>
+      <div class="mb-7">
+        <p class="text-white font-bold mb-4">Company</p>
+        <p class="text-gray-400 mb-2">About</p>
+        <p class="text-gray-400 mb-2">Our Team</p>
+        <p class="text-gray-400 mb-2">Careers</p>
+        <p class="text-gray-400 mb-2">Contact</p>
       </div>
 
-      <div></div>
+      <div class="flex w-3/5 items-center justify-between m-auto">
+        <div><img src="../assets/icon-facebook.svg" alt=""></div>
+        <div><img src="../assets/icon-twitter.svg" alt=""></div>
+        <div><img src="../assets/icon-pinterest.svg" alt=""></div>
+        <div><img src="../assets/icon-instagram.svg" alt=""></div>
+      </div>
     </div>
   
     <div class="attribution">

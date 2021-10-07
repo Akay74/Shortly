@@ -70,32 +70,32 @@
       </div>
     </div>
 
-    <div class="px-6 py-20 bg-blue-800">
+    <div class="px-6 py-20 bg-boostmobile">
       <div class="text-white font-bold text-2xl mb-3">Boost your links today</div>
 
       <button class="rounded-full bg-gray-400 text-white font-bold px-7 py-3 cursor-pointer">Get Started</button>
     </div>
 
-    <div class="bg-blue-900 px-8 py-10">
+    <div class="bg-violet-900 px-8 py-10">
       <div class="mb-7 text-center"><img src="../assets/logo-white.svg" alt="Shortly logo"></div>
       <div class="mb-7">
         <p class="text-white font-bold mb-4">Features</p>
-        <p class="text-gray-400 mb-2">Link Shortening</p>
-        <p class="text-gray-400 mb-2">Branded Links</p>
-        <p class="text-gray-400 mb-2">Analytics</p>
+        <p class="text-cyan mb-2">Link Shortening</p>
+        <p class="text-cyan mb-2">Branded Links</p>
+        <p class="text-cyan mb-2">Analytics</p>
       </div>
       <div class="mb-7">
         <p class="text-white font-bold mb-4">Resources</p>
-        <p class="text-gray-400 mb-2">Blog</p>
-        <p class="text-gray-400 mb-2">Developers</p>
-        <p class="text-gray-400 mb-2">Support</p>
+        <p class="text-cyan mb-2">Blog</p>
+        <p class="text-cyan mb-2">Developers</p>
+        <p class="text-cyan mb-2">Support</p>
       </div>
       <div class="mb-7">
         <p class="text-white font-bold mb-4">Company</p>
-        <p class="text-gray-400 mb-2">About</p>
-        <p class="text-gray-400 mb-2">Our Team</p>
-        <p class="text-gray-400 mb-2">Careers</p>
-        <p class="text-gray-400 mb-2">Contact</p>
+        <p class="text-cyan mb-2">About</p>
+        <p class="text-cyan mb-2">Our Team</p>
+        <p class="text-cyan mb-2">Careers</p>
+        <p class="text-cyan mb-2">Contact</p>
       </div>
 
       <div class="flex w-3/5 items-center justify-between m-auto">

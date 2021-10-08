@@ -41,8 +41,8 @@
         </div>
       </div>
       <div>
-        <div class="bg-white w-5/6 rounded m-auto pt-16 pb-8 px-6 mt-20">
-          <div><img src="" alt=""></div>
+        <div class="bg-white w-5/6 rounded m-auto pt-16 pb-8 px-6 mt-20 relative">
+          <div class="m-auto w-24 bg-violet-800 rounded-full h-24 absolute -top-12 flex justify-center"><img class="self-center" src="../assets/icon-brand-recognition.svg" alt=""></div>
           <h3 class="text-xl font-extrabold mb-4">Brand Recognition</h3>
           <p class="text-gray-400 text-sm">
             Boost your brand recognition with each click. Generic links don’t 
@@ -50,8 +50,8 @@
           </p>
         </div>
 
-        <div class="bg-white w-5/6 rounded m-auto pt-16 pb-8 px-6 mt-20">
-          <div><img src="" alt=""></div>
+        <div class="bg-white w-5/6 rounded m-auto pt-16 pb-8 px-6 mt-20 relative">
+          <div class="m-auto w-24 bg-violet-800 rounded-full h-24 absolute -top-12 flex justify-center"><img class="self-center" src="../assets/icon-detailed-records.svg" alt=""></div>
           <h3 class="text-xl font-extrabold mb-4">Detailed Records</h3>
           <p class="text-gray-400 text-sm">
             Gain insights into who is clicking your links. Knowing when and where 
@@ -59,8 +59,8 @@
           </p>
         </div>
 
-        <div class="bg-white w-5/6 rounded m-auto pt-16 pb-8 px-6 mt-20">
-          <div><img src="" alt=""></div>
+        <div class="bg-white w-5/6 rounded m-auto pt-16 pb-8 px-6 mt-20 relative">
+          <div class="m-auto w-24 bg-violet-800 rounded-full h-24 absolute -top-12 flex justify-center"><img class="self-center m-auto" src="../assets/icon-fully-customizable.svg" alt=""></div>
           <h3 class="text-xl font-extrabold mb-4">Fully Customizable</h3>
           <p class="text-gray-400 text-sm">
             Improve brand awareness and content discoverability through customizable 
@@ -70,7 +70,7 @@
       </div>
     </div>
 
-    <div class="px-6 py-20 bg-boostmobile">
+    <div class="px-6 py-20 bg-blue-900">
       <div class="text-white font-bold text-2xl mb-3">Boost your links today</div>
 
       <button class="rounded-full bg-gray-400 text-white font-bold px-7 py-3 cursor-pointer">Get Started</button>

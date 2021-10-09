@@ -15,7 +15,7 @@
       </div>
 
     </div>
-    <div class="flex flex-col-reverse pb-24">
+    <div class="flex flex-col-reverse pb-32">
       <div class="mx-10 my-8">
         <div class="text-4xl font-extrabold mb-3">More than just shorter links</div>
         <div class="text-gray-400 mb-4">
@@ -27,12 +27,11 @@
       <div class="ml-6 w-full h-120"><img src="../assets/illustration-working.svg" alt="" class="h-full"></div>
     </div>
 
-    <form class="mx-6 w-5/6 rounded-md flex flex-col p-6 bg-blue-900 absolute -bottom-48">
-      <input type="text" placeholder="Shorten a link here..." class="w-full p-3 rounded mb-4">
-      <button class="w-full bg-gray-400 text-white font-bold rounded p-3">Shorten It!</button>
-    </form>
-
-    <div class="bg-gray-200 pt-40 pb-12">
+    <div class="bg-gray-200 pt-40 pb-12 relative">
+      <form class="h-auto w-5/6 rounded-md flex flex-col p-6 bg-blue-900 absolute -top-16">
+        <input type="text" placeholder="Shorten a link here..." class="w-full p-3 rounded mb-4">
+        <button class="w-full bg-gray-400 text-white font-bold rounded p-3">Shorten It!</button>
+      </form>
       <div class="px-6 leading-10">
         <div class="text-2xl font-extrabold mb-4">Advanced Statistics</div>
         <div class="text-gray-400 text-sm">

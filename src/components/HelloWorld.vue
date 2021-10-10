@@ -1,9 +1,9 @@
 <template>
   <div>
-    <nav class="bg-white shadow-lg">
-		<div class="max-w-6xl mx-auto px-4">
-			<div class="flex justify-between">
-				<div class="flex space-x-7">
+    <nav class="bg-white shadow-sm">
+		<div class="max-w-6xl mx-auto px-4 py-8">
+			<div class="flex w-full justify-between">
+				<div class="flex space-x-7 w-full justify-between">
 					<!-- Website Logo -->
 					<div>
 						<a href="#" class="flex items-center py-4 px-2">
@@ -12,29 +12,43 @@
 						</a>
 					</div>
 					<!-- Primary Navbar items -->
-					<div class="hidden md:flex items-center space-x-1">
-						<a
-							href=""
-							class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold "
-							>Features</a
-						>
-						<a
-							href=""
-							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
-							>Pricing</a
-						>
-						<a
-							href=""
-							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
-							>Resources</a
-						>
-						<a
-							href=""
-							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
-							>Login</a
-						>
-            <button>Sign Up</button>
+          <div class="hidden md:flex w-full md:justify-between items-center">
+            <div class="space-x-1">
+              <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">
+                Features
+              </a>
+              <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">
+                Pricing
+              </a>
+              <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">
+                Resources
+              </a>
+          <!--Secondary navbar menu-->
 					</div>
+            <div class="space-x-1">
+              <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">
+                Login
+              </a>
+              <button class="bg-cyan rounded-full px-6 py-2 text-white font-bold">Sign Up</button>
+            </div>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button" v-on:click="toggle">
+              <svg
+                class="w-9 h-9 text-gray-500"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
 				</div>
 			</div>
 		</div>
@@ -54,7 +68,7 @@
     <div class="bg-gray-200 pt-40 pb-12 relative">
       <form class="h-auto w-5/6 rounded-md flex flex-col p-6 bg-blue-900 absolute -top-16">
         <input type="text" placeholder="Shorten a link here..." class="w-full p-3 rounded mb-4">
-        <button class="w-full bg-gray-400 text-white font-bold rounded p-3">Shorten It!</button>
+        <button class="w-full bg-cyan text-white font-bold rounded p-3">Shorten It!</button>
       </form>
       <div class="px-6 leading-10">
         <div class="text-2xl font-extrabold mb-4">Advanced Statistics</div>
@@ -140,6 +154,11 @@
 export default {
   setup() {
     
+  },
+  methods: {
+    toggle: function () {
+      
+    }
   },
 }
 </script>

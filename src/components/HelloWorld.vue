@@ -12,7 +12,7 @@
 						</a>
 					</div>
 					<!-- Primary Navbar items -->
-          <div class="hidden md:flex w-full md:justify-between items-center">
+          <div v-show="!mobile" class="hidden md:flex w-full md:justify-between items-center">
             <div class="space-x-1">
               <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">
                 Features
@@ -23,8 +23,8 @@
               <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">
                 Resources
               </a>
-          <!--Secondary navbar menu-->
-					</div>
+            </div>
+            <!--Secondary navbar menu-->
             <div class="space-x-1">
               <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">
                 Login
@@ -34,10 +34,9 @@
           </div>
           <!-- Mobile menu button -->
           <div class="md:hidden flex items-center">
-            <button class="outline-none mobile-menu-button" v-on:click="toggle">
+            <button class="outline-none mobile-menu-button" @click="toggleMobileNav" v-show="mobile">
               <svg
                 class="w-9 h-9 text-gray-500"
-                x-show="!showMenu"
                 fill="none"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -50,16 +49,16 @@
             </button>
           </div>
           <!-- mobile menu -->
-			<div class="hidden mobile-menu">
-				<ul class="">
-					<li class="active"><a href="index.html" class="block px-2 py-4 text-white  font-semibold">Features</a></li>
-					<li><a href="#" class="block text-cyan px-2 py-4 hover:text-green-500 transition duration-300">Pricing</a></li>
-					<li><a href="#" class="block text-cyan px-2 py-4 hover:text-green-500 transition duration-300">Resources</a></li>
-          <li><a href="" class="block py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">Login</a></li>
-          <button class=" block bg-cyan rounded-full px-6 py-2 text-white font-bold">Sign Up</button>
-          <li></li>
-				</ul>
-			</div>
+          <div class="mobile-menu">
+            <ul v-show="mobileNav" class="">
+              <li class="active"><a href="index.html" class="block px-2 py-4 text-white  font-semibold">Features</a></li>
+              <li><a href="#" class="block text-cyan px-2 py-4 hover:text-green-500 transition duration-300">Pricing</a></li>
+              <li><a href="#" class="block text-cyan px-2 py-4 hover:text-green-500 transition duration-300">Resources</a></li>
+              <li><a href="" class="block py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">Login</a></li>
+              <button class=" block bg-cyan rounded-full px-6 py-2 text-white font-bold">Sign Up</button>
+              <li></li>
+            </ul>
+          </div>
 				</div>
 			</div>
 		</div>
@@ -164,17 +163,37 @@
 <script>
 export default {
   name: 'Burger',
-  props: {
-    active: {
-      type: Boolean,
-      required: true, 
-      default: false
+  data: function() {
+    return {
+      scrollPosition: null,
+      mobile: true,
+      mobileNav: null,
+      windowWidth: null,
     }
+  },
+  created() {
+    window.addEventListener("resize", this.checkScreen);
+    this.checkScreen();
   },
   setup() {
     
   },
-  methods: {}
+  methods: {
+    toggleMobileNav() {
+      this.mobileNav = !this.mobileNav
+    },
+
+    checkScreen() {
+      this.windowWidth = window.innerWidth;
+      if(this.windowWidth <= 750){
+        this.mobile = true;
+        return;
+      }
+      this.mobile = false;
+      this.mobileNav = false;
+      return;
+    }
+  }
 }
 </script>
 

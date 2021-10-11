@@ -49,6 +49,17 @@
               </svg>
             </button>
           </div>
+          <!-- mobile menu -->
+			<div class="hidden mobile-menu">
+				<ul class="">
+					<li class="active"><a href="index.html" class="block px-2 py-4 text-white  font-semibold">Features</a></li>
+					<li><a href="#" class="block text-cyan px-2 py-4 hover:text-green-500 transition duration-300">Pricing</a></li>
+					<li><a href="#" class="block text-cyan px-2 py-4 hover:text-green-500 transition duration-300">Resources</a></li>
+          <li><a href="" class="block py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">Login</a></li>
+          <button class=" block bg-cyan rounded-full px-6 py-2 text-white font-bold">Sign Up</button>
+          <li></li>
+				</ul>
+			</div>
 				</div>
 			</div>
 		</div>
@@ -152,14 +163,18 @@
 
 <script>
 export default {
+  name: 'Burger',
+  props: {
+    active: {
+      type: Boolean,
+      required: true, 
+      default: false
+    }
+  },
   setup() {
     
   },
-  methods: {
-    toggle: function () {
-      
-    }
-  },
+  methods: {}
 }
 </script>
 

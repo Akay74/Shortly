@@ -2,7 +2,7 @@
   <div>
     <nav class="bg-white shadow-sm">
 		<div class="max-w-6xl mx-auto px-4 py-8">
-			<div class="flex w-full justify-between">
+			<div class="flex w-full justify-between relative">
 				<div class="flex space-x-7 w-full justify-between">
 					<!-- Website Logo -->
 					<div>
@@ -49,13 +49,13 @@
             </button>
           </div>
           <!-- mobile menu -->
-          <div class="mobile-menu">
-            <ul v-show="mobileNav" class="">
-              <li class="active"><a href="index.html" class="block px-2 py-4 text-white  font-semibold">Features</a></li>
-              <li><a href="#" class="block text-cyan px-2 py-4 hover:text-green-500 transition duration-300">Pricing</a></li>
-              <li><a href="#" class="block text-cyan px-2 py-4 hover:text-green-500 transition duration-300">Resources</a></li>
-              <li><a href="" class="block py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">Login</a></li>
-              <button class=" block bg-cyan rounded-full px-6 py-2 text-white font-bold">Sign Up</button>
+          <div v-show="mobileNav" class="mobile-menu absolute top-16 bg-violet-800 rounded-lg w-5/6 p-8">
+            <ul>
+              <li><a href="index.html" class="block px-2 py-4 text-cyan font-bold text-lg">Features</a></li>
+              <li><a href="#" class="block text-cyan px-2 py-4 font-bold text-lg hover:text-green-500 transition duration-300">Pricing</a></li>
+              <li class="mb-3 border-b-2"><a href="#" class="block text-cyan px-2 py-4 font-bold text-lg hover:text-green-500 transition duration-300">Resources</a></li>
+              <li><a href="" class="block py-4 px-2 text-cyan font-bold text-lg hover:text-green-500 transition duration-300">Login</a></li>
+              <button class=" block bg-cyan rounded-full px-6 py-2 text-white font-bold text-lg text-center w-full">Sign Up</button>
               <li></li>
             </ul>
           </div>
@@ -165,7 +165,6 @@ export default {
   name: 'Burger',
   data: function() {
     return {
-      scrollPosition: null,
       mobile: true,
       mobileNav: null,
       windowWidth: null,

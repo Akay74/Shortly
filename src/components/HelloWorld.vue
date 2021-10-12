@@ -50,10 +50,10 @@
           </div>
           <!-- mobile menu -->
           <div v-show="mobileNav" class="mobile-menu absolute top-16 bg-violet-800 rounded-lg w-11/12 p-8 flex justify-center">
-            <ul>
+            <ul class="w-full">
               <li><a href="index.html" class="block px-2 py-4 text-white font-bold text-lg">Features</a></li>
               <li><a href="#" class="block text-white px-2 py-4 font-bold text-lg hover:text-green-500 transition duration-300">Pricing</a></li>
-              <li class="mb-3 border-b-2"><a href="#" class="block text-white px-2 pt-4 pb-8 font-bold text-lg hover:text-green-500 transition duration-300">Resources</a></li>
+              <li class="mb-3 border-b"><a href="#" class="block text-white px-2 pt-4 pb-8 font-bold text-lg hover:text-green-500 transition duration-300">Resources</a></li>
               <li><a href="" class="block py-4 px-2 text-white font-bold text-lg hover:text-green-500 transition duration-300">Login</a></li>
               <button class=" block bg-cyan rounded-full mt-4 px-6 py-2 text-white font-bold text-lg text-center w-full">Sign Up</button>
               <li></li>
@@ -122,7 +122,8 @@
 
       <button class="rounded-full bg-gray-400 text-white font-bold px-7 py-3 cursor-pointer">Get Started</button>
     </div>
-
+    
+    <!--footer-->
     <div class="bg-violet-900 px-8 py-10 lg:flex lg:justify-between">
       <div class="mb-7 text-center lg:w-1/3"><img src="../assets/logo-white.svg" alt="Shortly logo"></div>
       <div class="mb-7">

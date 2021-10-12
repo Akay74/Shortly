@@ -84,9 +84,9 @@
         <input type="text" placeholder="Shorten a link here..." class="w-full p-3 rounded mb-4 lg:w-5/6">
         <button class="w-full bg-cyan text-white font-bold rounded p-2.5">Shorten It!</button>
       </form>
-      <div class="px-6 leading-10">
-        <div class="text-2xl font-extrabold mb-4">Advanced Statistics</div>
-        <div class="text-gray-400 text-sm">
+      <div class="px-6 leading-10 lg:w-1/2 lg:text-center">
+        <div class="text-2xl font-extrabold mb-4 lg:text-4xl">Advanced Statistics</div>
+        <div class="text-gray-400 text-sm lg:text-xl">
           Track how your links are performing across the web with our 
           advanced statistics dashboard.
         </div>

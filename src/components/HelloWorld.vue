@@ -73,17 +73,18 @@
           Build your brand’s recognition and get detailed insights 
           on how your links are performing.
         </div>
-        <button class="rounded-full bg-gray-400 text-white font-bold px-7 py-3 cursor-pointer lg:mt-8">Get Started</button>
+        <button class="rounded-full bg-gray-400 text-white font-bold px-10 py-3 cursor-pointer mt-6 lg:mt-8">Get Started</button>
       </div>
       <div class="ml-6 w-full h-120"><img src="../assets/illustration-working.svg" alt="" class="h-full"></div>
     </div>
 
     <!--Third Section-->
     <div class="bg-gray-200 pt-40 pb-12 relative">
+      <!--Shorten link section-->
       <div class="flex justify-center">
-        <form class="h-auto w-5/6 rounded-md flex flex-col p-6 bg-blue-900 absolute -top-16 lg:flex-row lg:justify-between">
-          <input type="text" placeholder="Shorten a link here..." class="w-full p-3 rounded mb-4 lg:w-3/6">
-          <button class="w-full bg-cyan text-white font-bold rounded p-2.5 lg:w-2/6">Shorten It!</button>
+        <form class="h-auto w-5/6 rounded-md flex flex-col p-6 bg-blue-900 absolute -top-16 lg:flex-row lg:justify-between lg:items-center lg:p-8">
+          <input type="text" placeholder="Shorten a link here..." class="w-full p-3 rounded mb-4 lg:w-4/6 lg:mb-0">
+          <button class="w-full bg-cyan text-white font-bold rounded p-3 lg:w-1/6">Shorten It!</button>
         </form>
       </div>
       
@@ -134,7 +135,7 @@
     </div>
 
     <!--Fourth Section-->
-    <div class="px-6 py-20 bg-blue-900">
+    <div class="px-6 py-20 bg-blue-900" style="background-image: url('../src/assets/bg-boost-desktop.svg');">
       <div class="text-white font-bold text-2xl mb-4">Boost your links today</div>
 
       <button class="rounded-full bg-gray-400 text-white font-bold px-7 py-3 cursor-pointer">Get Started</button>
@@ -174,7 +175,7 @@
     </div>
 
     <!--attribution section-->
-    <div class="bg-violet-900 text-white">
+    <div class="bg-violet-900 text-white pb-6">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/Akay74" target="_blank">Akay</a>.
     </div>

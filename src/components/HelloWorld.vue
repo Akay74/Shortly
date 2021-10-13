@@ -88,16 +88,18 @@
         </form>
       </div>
       
-      <div class="px-6 leading-10 lg:w-1/2 lg:flex lg:justify-center lg:flex-col">
-        <div class="text-2xl font-extrabold mb-4 lg:text-4xl">Advanced Statistics</div>
-        <div class="text-gray-400 text-sm lg:text-xl">
-          Track how your links are performing across the web with our 
-          advanced statistics dashboard.
+      <div class="lg:flex lg:justify-center">
+        <div class="px-6 leading-10 lg:w-1/2 lg:text-center">
+          <div class="text-2xl font-extrabold mb-4 lg:text-4xl">Advanced Statistics</div>
+          <div class="text-gray-400 text-sm lg:text-xl">
+            Track how your links are performing across the web with our 
+            advanced statistics dashboard.
+          </div>
         </div>
       </div>
 
       <!--Card section-->
-      <div class="lg:flex lg:justify-between lg:mx-8">
+      <div class="lg:flex lg:justify-between lg:px-16">
         <div class="bg-white w-5/6 rounded m-auto pt-16 pb-8 px-6 mt-20 relative lg:w-1/4 lg:text-left">
           <div class="flex justify-center">
             <div class="m-auto w-24 bg-violet-800 rounded-full h-24 absolute -top-12 flex justify-center"><img class="self-center" src="../assets/icon-brand-recognition.svg" alt=""></div>
@@ -135,38 +137,40 @@
     </div>
 
     <!--Fourth Section-->
-    <div class="px-6 py-20 bg-blue-900" style="background-image: url('../src/assets/bg-boost-desktop.svg');">
-      <div class="text-white font-bold text-2xl mb-4">Boost your links today</div>
+    <div class="px-6 py-20 bg-violet-800 lg:bg-boostdesktop">
+      <div class="text-white font-bold text-2xl lg:text-4xl mb-4">Boost your links today</div>
 
-      <button class="rounded-full bg-gray-400 text-white font-bold px-7 py-3 cursor-pointer">Get Started</button>
+      <button class="rounded-full bg-gray-400 text-white font-bold px-7 py-3 cursor-pointer lg:px-12 lg:py-4 lg:text-lg">Get Started</button>
     </div>
     
     <!--footer-->
-    <div class="bg-violet-900 px-8 py-10 lg:flex lg:justify-between">
-      <div class="flex justify-center">
-        <div class="mb-7 text-center lg:w-1/3"><img src="../assets/logo-white.svg" alt="Shortly logo"></div>
+    <div class="bg-violet-900 px-8 lg:px-28 py-10 lg:flex lg:justify-between lg:items-start lg:pt-16">
+      <div class="flex justify-center lg:block lg:w-1/5">
+        <div class="mb-7"><img src="../assets/logo-white.svg" alt="Shortly logo"></div>
       </div>
-      <div class="mb-7">
-        <p class="text-white font-bold mb-4">Features</p>
-        <p class="text-cyan mb-2">Link Shortening</p>
-        <p class="text-cyan mb-2">Branded Links</p>
-        <p class="text-cyan mb-2">Analytics</p>
-      </div>
-      <div class="mb-7">
-        <p class="text-white font-bold mb-4">Resources</p>
-        <p class="text-cyan mb-2">Blog</p>
-        <p class="text-cyan mb-2">Developers</p>
-        <p class="text-cyan mb-2">Support</p>
-      </div>
-      <div class="mb-7">
-        <p class="text-white font-bold mb-4">Company</p>
-        <p class="text-cyan mb-2">About</p>
-        <p class="text-cyan mb-2">Our Team</p>
-        <p class="text-cyan mb-2">Careers</p>
-        <p class="text-cyan mb-2">Contact</p>
+      <div class="mx-auto lg:flex lg:justify-between w-3/5 lg:mx-0 lg:text-left lg:pl-16">
+        <div class="mb-7 lg:w-1/3">
+          <p class="text-white font-bold mb-4">Features</p>
+          <p class="text-cyan mb-2">Link Shortening</p>
+          <p class="text-cyan mb-2">Branded Links</p>
+          <p class="text-cyan mb-2">Analytics</p>
+        </div>
+        <div class="mb-7 lg:w-1/3">
+          <p class="text-white font-bold mb-4">Resources</p>
+          <p class="text-cyan mb-2">Blog</p>
+          <p class="text-cyan mb-2">Developers</p>
+          <p class="text-cyan mb-2">Support</p>
+        </div>
+        <div class="mb-7 lg:w-1/3">
+          <p class="text-white font-bold mb-4">Company</p>
+          <p class="text-cyan mb-2">About</p>
+          <p class="text-cyan mb-2">Our Team</p>
+          <p class="text-cyan mb-2">Careers</p>
+          <p class="text-cyan mb-2">Contact</p>
+        </div>
       </div>
 
-      <div class="flex w-3/5 items-center justify-between m-auto lg:w-1/6">
+      <div class="flex w-3/5 items-center justify-between m-auto lg:m-0 lg:w-1/6">
         <div><img src="../assets/icon-facebook.svg" alt=""></div>
         <div><img src="../assets/icon-twitter.svg" alt=""></div>
         <div><img src="../assets/icon-pinterest.svg" alt=""></div>

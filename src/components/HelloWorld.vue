@@ -15,22 +15,22 @@
             <!-- Primary Navbar items -->
             <div v-show="!mobile" class="hidden md:flex w-full md:justify-between items-center">
               <div class="space-x-1">
-                <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">
+                <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-blue-900 transition duration-300">
                   Features
                 </a>
-                <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">
+                <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-blue-900 transition duration-300">
                   Pricing
                 </a>
-                <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">
+                <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-blue-900 transition duration-300">
                   Resources
                 </a>
               </div>
               <!--Secondary navbar menu-->
               <div class="space-x-1">
-                <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-green-500 transition duration-300">
+                <a href="" class="py-4 px-2 text-cyan font-semibold hover:text-blue-900 transition duration-300">
                   Login
                 </a>
-                <button class="bg-cyan rounded-full px-6 py-2 text-white font-bold">Sign Up</button>
+                <button class="bg-cyan rounded-full px-6 py-2 text-white font-bold hover:bg-grey">Sign Up</button>
               </div>
             </div>
             <!-- Mobile menu button -->
@@ -73,7 +73,7 @@
           Build your brand’s recognition and get detailed insights 
           on how your links are performing.
         </div>
-        <button class="rounded-full bg-gray-400 text-white font-bold px-10 py-3 cursor-pointer mt-6 lg:mt-8">Get Started</button>
+        <button class="rounded-full bg-gray-400 text-white font-bold px-10 py-3 cursor-pointer mt-6 lg:mt-8 hover:bg-grey">Get Started</button>
       </div>
       <div class="ml-6 w-full h-120"><img src="../assets/illustration-working.svg" alt="" class="h-full"></div>
     </div>
@@ -84,7 +84,7 @@
       <div class="flex justify-center">
         <form class="h-auto w-5/6 rounded-md flex flex-col p-6 bg-blue-900 absolute -top-16 lg:flex-row lg:justify-between lg:items-center lg:p-8">
           <input type="text" placeholder="Shorten a link here..." class="w-full p-3 rounded mb-4 lg:w-4/6 lg:mb-0">
-          <button class="w-full bg-cyan text-white font-bold rounded p-3 lg:w-1/6">Shorten It!</button>
+          <button class="w-full bg-cyan text-white font-bold rounded p-3 lg:w-1/6 hover:bg-grey">Shorten It!</button>
         </form>
       </div>
       
@@ -140,7 +140,7 @@
     <div class="px-6 py-20 bg-violet-800 lg:bg-boostdesktop">
       <div class="text-white font-bold text-2xl lg:text-4xl mb-4">Boost your links today</div>
 
-      <button class="rounded-full bg-gray-400 text-white font-bold px-7 py-3 cursor-pointer lg:px-12 lg:py-4 lg:text-lg">Get Started</button>
+      <button class="rounded-full bg-gray-400 text-white font-bold px-7 py-3 cursor-pointer lg:px-12 lg:py-4 lg:text-lg hover:bg-grey">Get Started</button>
     </div>
     
     <!--footer-->

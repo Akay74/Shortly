@@ -87,6 +87,13 @@
           <button class="w-full bg-cyan text-white font-bold rounded p-3 lg:w-1/6 hover:bg-grey">Shorten It!</button>
         </form>
       </div>
+
+      <div>
+        <div v-for="post in posts" v-bind:key="post.id">
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.body }}</p>
+        </div>
+      </div>
       
       <div class="lg:flex lg:justify-center">
         <div class="px-6 leading-10 lg:w-1/2 lg:text-center">
@@ -194,11 +201,13 @@ export default {
       mobile: true,
       mobileNav: null,
       windowWidth: null,
+      posts: [],
     }
   },
   created() {
     window.addEventListener("resize", this.checkScreen);
     this.checkScreen();
+    this.getData();
   },
   setup() {
     
@@ -217,8 +226,20 @@ export default {
       this.mobile = false;
       this.mobileNav = false;
       return;
-    }
-  }
+    },
+
+    async getData() {
+      try {
+        const response = await this.$http.get(
+          "https://api.shrtco.de/v2/shorten?url=example.org/very/long/link.html"
+        );
+        // JSON responses are automatically parsed.
+        this.posts = response.data;
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  },
 }
 </script>
 
